@@ -8,30 +8,6 @@
   }
 }
 
-/* custom ellipse */
-.bg-ellipse-style {
-  border: 1px solid #e4b50d23;
-  border-radius: 50%;
-  position: absolute;
-  transform: rotate(14.21deg);
-  transform-origin: center;
-}
-
-.bg-ellipse {
-  height: 410px;
-  width: 1010px;
-}
-
-.bg-ellipse-2 {
-  height: 660px;
-  width: 1450px;
-}
-
-.bg-ellipse-3 {
-  height: 880px;
-  width: 1760px;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -94,4 +70,38 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Scroll margin for sections */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: 100px;
+}
+
+/* custom ellipse */
+.bg-ellipse-style {
+  border: 1px solid #e4b50d23;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(14.21deg);
+  transform-origin: center;
+}
+
+.bg-ellipse {
+  height: 410px;
+  width: 1010px;
+}
+
+.bg-ellipse-2 {
+  height: 660px;
+  width: 1450px;
+}
+
+.bg-ellipse-3 {
+  height: 880px;
+  width: 1760px;
 }

@@ -28,7 +28,10 @@ function App() {
 
       <main className="container relative z-50">
         {/* Hero */}
-        <section className="min-h-[89vh] lg:min-h-[83vh] md:px-12 max-w-4xl flex items-center">
+        <section
+          id="home"
+          className="min-h-[89vh] lg:min-h-[83vh] md:px-12 max-w-4xl flex items-center"
+        >
           <div className="relative">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -143,7 +146,7 @@ function App() {
         </section>
 
         {/* About */}
-        <section className="relative mt-48">
+        <section id="about-us" className="relative mt-48">
           <motion.h2
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -169,7 +172,10 @@ function App() {
         </section>
 
         {/* FAQ */}
-        <section className="relative mt-48 bg-[#BBBBBB]/[10%] max-w-full lg:max-w-[997px] pt-8 pb-12 mx-auto rounded-lg">
+        <section
+          id="faqs"
+          className="relative mt-48 bg-[#BBBBBB]/[10%] max-w-full lg:max-w-[997px] pt-8 pb-12 mx-auto rounded-lg"
+        >
           <motion.h4
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -188,7 +194,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <div className="relative mt-56 z-50 bg-[#051422]">
+      <div id="contact-us" className="relative mt-56 z-50 bg-[#051422]">
         <Footer />
       </div>
     </div>
