@@ -7,8 +7,22 @@ import Features from "./components/shared/Features";
 import { Button } from "./components/ui/button";
 import { motion } from "framer-motion";
 import { FaEthereum } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import Loader from "./components/global/Loader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) return <Loader />;
+
   return (
     <div className="overflow-x-hidden">
       {/* Header */}
