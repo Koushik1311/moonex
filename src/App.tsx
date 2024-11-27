@@ -104,7 +104,7 @@ function App() {
               }}
               src="/images/star-img.png"
               alt="Planet"
-              className="hidden lg:block absolute -top-[190px] -right-[270px] z-50 w-12 h-13"
+              className="hidden md:block absolute md:-top-[190px] md:right-[10px] lg:-top-[190px] lg:-right-[270px] z-50 w-12 h-13"
             />
 
             {/* Planet */}
@@ -137,7 +137,7 @@ function App() {
               }}
               src="/images/star-img 2.png"
               alt="Planet"
-              className="hidden lg:block absolute -bottom-[150px] -right-[270px] z-50 w-12 h-12 lg:w-16 lg:h-16"
+              className="absolute -bottom-[270px] left-[280px] md:left-[550px] lg:-bottom-[150px] lg:-right-[270px] lg:left-auto z-50 w-12 h-12 lg:w-16 lg:h-16"
             />
           </div>
         </section>
@@ -153,9 +153,8 @@ function App() {
           >
             Why <span className="text-[#E4B40D]">MoonEX</span>
           </motion.h2>
+          <div className="h-[360px] w-[560px] bg-[#E4B40D] rounded-full block absolute top-[420px] left-[200px] z-40 blur-[400px] opacity-70" />
           <ComparisonTable />
-
-          {/* ... existing background gradient code ... */}
 
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
