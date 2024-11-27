@@ -17,7 +17,7 @@ export default function Header() {
 
         {/* Actions */}
         <div className="hidden lg:inline">
-          <ConnectWalletButton />
+          <ConnectWalletButton isNavbar />
         </div>
 
         {/* Hamburger Menu */}

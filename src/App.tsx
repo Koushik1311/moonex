@@ -6,6 +6,7 @@ import FAQ from "./components/shared/FAQ";
 import Features from "./components/shared/Features";
 import { Button } from "./components/ui/button";
 import { motion } from "framer-motion";
+import { FaEthereum } from "react-icons/fa";
 
 function App() {
   return (
@@ -61,10 +62,14 @@ function App() {
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
                 <Button
-                  className="border-[#E4B40D] text-[#E4B40D] bg-transparent rounded-full"
+                  className="border-[#E4B40D] text-[#E4B40D] bg-transparent rounded-full hover:bg-transparent hover:text-[#E4B40D] group"
                   variant="outline"
                 >
-                  Trade Crypto
+                  <span>Trade Crypto</span>
+                  <span className="w-0 opacity-0 group-hover:w-4 group-hover:opacity-100 transition-all duration-200">
+                    →
+                  </span>
+                  <FaEthereum className="w-4 h-4" />
                 </Button>
               </motion.div>
             </div>
