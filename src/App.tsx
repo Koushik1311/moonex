@@ -153,7 +153,7 @@ function App() {
           >
             Why <span className="text-[#E4B40D]">MoonEX</span>
           </motion.h2>
-          <div className="h-[360px] w-[560px] bg-[#E4B40D] rounded-full block absolute top-[420px] left-[200px] z-40 blur-[400px] opacity-70" />
+          <div className="h-[360px] w-[560px] bg-[#E4B40D] rounded-full block absolute top-[420px] left-[200px] z-40 blur-[150px] opacity-20" />
           <ComparisonTable />
 
           <motion.h3
