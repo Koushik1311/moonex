@@ -1,11 +1,11 @@
 export const NAVIGATION = [
   {
     label: "Home",
-    href: "/",
+    href: "#home",
   },
   {
     label: "About Us",
-    href: "/#about-us",
+    href: "#about-us",
   },
   {
     label: "Roadmap",
@@ -13,10 +13,10 @@ export const NAVIGATION = [
   },
   {
     label: "FAQs",
-    href: "/#faqs",
+    href: "#faqs",
   },
   {
     label: "Contact Us",
-    href: "/#contact-us",
+    href: "#contact-us",
   },
 ];
