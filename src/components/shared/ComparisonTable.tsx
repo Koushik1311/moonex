@@ -17,9 +17,9 @@ export default function ComparisonTable() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.3 }}
       viewport={{ once: true }}
-      className="bg-[#BBBBBB]/[10%] rounded-lg  px-12 pb-10"
+      className="bg-[#BBBBBB]/[10%] rounded-lg px-4 md:px-12 pb-10 overflow-x-auto"
     >
-      <Table className="text-white">
+      <Table className="text-white min-w-[900px]">
         <TableHeader>
           <TableRow>
             <TableHead className="text-3xl font-semibold text-center py-10 text-[#E4B40D]">
